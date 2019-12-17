@@ -1,1 +1,192 @@
- 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Circular Std;
+    src: url(/fonts/CircularStd-Book.otf);
+}
+
+@font-face {
+    font-family: Schnyder L Demi;
+    src: url(fonts/Schnyder L Demi.otf);
+}
+
+body {
+    position: relative;
+    width: 1440px;
+    height: 5220px;
+    background: #F6F5F5;
+}
+
+/* Nav bar */
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    background: #F6F5F5;
+}
+
+nav {
+    position: relative;
+    width: 1440px;
+    height: 141px;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+}
+
+nav span {
+    display: block;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+a {
+    font-family: Circular Std;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+li {
+    list-style: none;
+    transition: 1s;
+}
+
+li:hover {
+    transform: rotateX(360deg);
+}
+
+.work {
+    position: absolute;
+    left: 64px;
+    top: 30px;
+}
+
+.about {
+    position: absolute;
+    left: 230px;
+    top: 30px;
+}
+
+.lab {
+    position: absolute;
+    left: 1054px;
+    top: 30px;
+}
+
+.contact {
+    position: absolute;
+    left: 1226px;
+    top: 30px;
+}
+
+/* home section */
+
+.home {
+    position: relative;
+}
+
+.logo {
+    font-family: Schnyder L Demi;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+}
+
+.demo {
+    z-index: -1;
+    width: 346px;
+    height: 440px;
+    top: 207px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+.light {
+    position: absolute;
+    left: 222px;
+    top: 673px;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    padding: 15px;
+    transition: ease-in 0.4s;
+    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+
+}
+
+.red {
+    position: absolute;
+    left: 1058px;
+    top: 673px;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #D8553B;
+    padding: 15px;
+    transition: ease-in 0.4s;
+    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+
+}
+
+.light:hover {
+    background-color: black;
+    color: white;
+    animation: blob 5s linear infinite;
+    transition: ease-out 0.5s;
+}
+
+
+.red:hover {
+    background-color: black;
+    animation: blob 5s linear infinite;
+    transition: ease-out 0.5s;
+    
+}
+
+@keyframes blob {
+    0%, 100% {
+        border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+    }
+    25% {
+        border-radius: 44% 56% 37% 63% / 45% 88% 52% 55%;
+    }
+    50% {
+        border-radius: 49% 56% 17% 88% / 42% 72% 22% 66%;
+    }
+    75% {
+        border-radius: 22% 36% 88% 92% / 19% 38% 22% 65%;
+    }
+}
