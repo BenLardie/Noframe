@@ -85,6 +85,22 @@ li:hover {
     top: 30px;
 }
 
+/* status bar */
+#bar-holder {
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    background: #F6F5F5;
+    z-index: 6;
+}
+
+#status-bar {
+    width: 7px;
+    left: 0px;
+    top: 0px;
+    background: #BDF166;
+}
+
 /* home section */
 
 .home {
@@ -106,10 +122,10 @@ li:hover {
     margin: 0 auto;
     display: block;
     position: absolute;
+    z-index: 1;
 }
 
 .demo {
-    z-index: -1;
     width: 346px;
     height: 440px;
     top: 207px;
@@ -117,6 +133,10 @@ li:hover {
     right: 0;
     margin: 0 auto;
     position: absolute;
+}
+
+.demo:hover {
+    z-index: 3;
 }
 
 button {
