@@ -6,12 +6,17 @@
 
 @font-face {
     font-family: Circular Std;
-    src: url(/fonts/CircularStd-Book.otf);
+    src: url('../fonts/CircularStd-Book.otf');
 }
 
 @font-face {
     font-family: Schnyder L Demi;
-    src: url(fonts/Schnyder L Demi.otf);
+    src: url('../fonts/Schnyder-L-Demi.otf');
+}
+
+@font-face {
+    font-family: Berthold;
+    src: url('../fonts/Berthold-Akzidenz-Grotesk-BE-Regular.otf');
 }
 
 body {
@@ -19,6 +24,10 @@ body {
     width: 1440px;
     height: 5220px;
     background: #F6F5F5;
+}
+
+main {
+    cursor: url('../Images/cursor.png');	
 }
 
 /* Nav bar */
@@ -50,15 +59,24 @@ a {
     text-decoration: none;
     font-size: 16px;
     line-height: 20px;
+    color: black;
 }
 
-li {
+nav li {
     list-style: none;
-    transition: 1s;
+    transition: .5s;
 }
 
-li:hover {
-    transform: rotateX(360deg);
+nav li::before {
+    transform: translate3d(0, 140%, 0);
+}
+
+nav li:hover::before {
+    transform: translate3d(0, 0, 0);
+}
+
+nav li:hover {
+    transform: translate3d(0, -140%, 0);
 }
 
 .work {
@@ -99,6 +117,19 @@ li:hover {
     left: 0px;
     top: 0px;
     background: #BDF166;
+}
+
+/* cursor */
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+    transform: translate(-50%, -50%);
 }
 
 /* home section */
@@ -209,4 +240,79 @@ button {
     75% {
         border-radius: 22% 36% 88% 92% / 19% 38% 22% 65%;
     }
+}
+
+/* main services */
+
+.main-services {
+    position: absolute;
+    width: 1005.22px;
+    height: 739px;
+    left: 216.39px;
+    top: 963px;
+}
+
+.main-services h3 {
+    position: absolute;
+    width: 150px;
+    height: 25px;
+    left: 645px;
+    top: 10px;
+    font-family: Berthold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.main-services span {
+    font-family: Schnyder L;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 85px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.art {
+    /* position: absolute; */
+    left: 216.39px;
+    /* top: 30px; */
+}
+
+.product {
+    /* position: absolute; */
+    left: 470.37px;
+    /* top: 153.17px; */
+}
+
+.visual {
+    /* position: absolute; */
+    left: 216.39px;
+    /* top: 356px; */
+}
+
+.interaction {
+    /* position: absolute; */
+    left: 344.91px;
+    /* top: 509px; */
+}
+
+.mobile {
+    /* position: absolute; */
+    left: 216.39px;
+    /* top: 662px; */
+}
+
+.animation {
+    /* position: absolute; */
+    left: 434px;
+    /* top: 815px; */
 }
