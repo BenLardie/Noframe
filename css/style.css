@@ -19,6 +19,11 @@
     src: url('../fonts/Berthold-Akzidenz-Grotesk-BE-Regular.otf');
 }
 
+@font-face {
+    font-family: Schnyder S Demi;
+    src: url('../fonts/Schnyder-L-Demi.otf');
+}
+
 body {
     position: relative;
     width: 1440px;
@@ -28,6 +33,27 @@ body {
 
 main {
     cursor: url('../Images/cursor.png');	
+}
+
+/* loader */
+
+.loader {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 99;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 /* Nav bar */
@@ -315,4 +341,37 @@ button {
     /* position: absolute; */
     left: 434px;
     /* top: 815px; */
+}
+
+/* footer */
+
+footer {
+    /* position: relative; */
+    font-family: Schnyder S Demi;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    position: absolute;
+    width: 450px;
+    height: 25px;
+    left: 495px;
+    top: 748px;
+}
+
+.twitter {
+    /* position: absolute;
+    left: 645px;
+    top: 748px; */
+}
+
+.dribble {
+    /* position: absolute;
+    left: 495px;
+    top: 748px; */
+}
+
+.behance {
+    /* position: absolute;
+    left: 795px;
+    top: 748px; */
 }
