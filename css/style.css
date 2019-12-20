@@ -24,15 +24,15 @@
     src: url('../fonts/Schnyder-L-Demi.otf');
 }
 
-body {
+.home-body {
     position: relative;
     width: 1440px;
     height: 5220px;
     background: #F6F5F5;
 }
 
-main {
-    cursor: url('../Images/cursor.png');	
+html {
+    cursor: url('../Images/cursor.png') 2 2, auto;	
 }
 
 /* loader */
@@ -147,9 +147,9 @@ nav li:hover {
 /* cursor */
 
 .cursor {
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
     border-radius: 50%;
     position: absolute;
     transition-duration: 400ms;

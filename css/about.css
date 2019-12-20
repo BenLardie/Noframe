@@ -1,0 +1,15 @@
+.about-landing {
+    height: 100vh;
+}
+
+.about-breakdown {
+    width: 1440px;
+    height: 3566px;
+    background-image: url('../Images/Canva - The Unsplash Book on Brown Wooden Cube Table.jpg');
+    display: block;
+}
+
+.build-something {
+    height: 900px;
+    display: block;
+}
