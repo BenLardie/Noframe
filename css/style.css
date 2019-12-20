@@ -62,7 +62,6 @@ header {
     position: fixed;
     top: 0;
     z-index: 4;
-    background: #F6F5F5;
 }
 
 nav {
@@ -156,6 +155,7 @@ nav li:hover {
     transition-duration: 400ms;
     transition-timing-function: ease-out;
     transform: translate(-50%, -50%);
+    /* z-index: 100; */
 }
 
 /* home section */
@@ -307,6 +307,15 @@ button {
     color: #000000;
 }
 
+/* .main-services li:nth-child(even) {
+    text-align: left;
+}
+
+.main-services li:nth-child(odd) {
+    text-align: right;
+    color: pink;
+} */
+
 .art {
     /* position: absolute; */
     left: 216.39px;
@@ -341,6 +350,90 @@ button {
     /* position: absolute; */
     left: 434px;
     /* top: 815px; */
+}
+
+/* work examples */
+
+.cases {
+    position: absolute;
+    top: 1851px;
+    display: block;
+}
+
+.case {
+    display: block;
+    height: 900px;
+    widows: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.case h2 {
+    font-family: Schnyder S Demi;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+}
+
+.case h3 {
+    text-align: center;
+}
+
+.case p {
+    max-width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.right {
+    width: 50%;
+    background-color: #E5E5E5;
+}
+
+.right img {
+    display: block;
+    width: 404.56px;
+    height: 539.41px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.left {
+    width: 50%;
+    position: relative;
+}
+
+.left img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+/* more */
+
+.more {
+    position: absolute;
+    top: 3819px;
+}
+
+.more h1 {
+    text-align: center;
+}
+
+/* contact */
+
+.contact-section {
+    position: absolute;
+    top: 4523px;
 }
 
 /* footer */

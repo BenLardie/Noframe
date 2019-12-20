@@ -24,6 +24,14 @@ window.onscroll = () => {
 // mouse effects
 
 const cursor = document.querySelector('.cursor')
+const links = document.querySelectorAll('a');
+
+// links.forEach(link => {
+//     link.addEventListener('mouseover', () => {
+//         console.log('its hovering')
+//         cursor.style.backgroundColor= 'black'
+//     })
+// })
 
 document.addEventListener('mousemove', e => {
     cursor.setAttribute('style', `top: ${e.pageY}px; left:${e.pageX}px;`)
