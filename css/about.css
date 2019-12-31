@@ -1,12 +1,117 @@
+@font-face {
+    font-family: Berthold;
+    src: url('../fonts/Berthold-Akzidenz-Grotesk-BE-Regular.otf');
+}
+
+
 .about-landing {
     height: 100vh;
+    font-family: Schnyder L Demi;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    background: #E5E5E5;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    flex: 1;
+    position: relative;
+}
+
+.about-landing p {
+    text-align: center;
+    position: absolute;
+    left: 120px;
+    top: 245px;
+}
+
+.about-landing ul {
+    list-style: none;
+    position: absolute;
+    left: 1030px;
+    top: 245px;
+}
+
+.number {
+    color: #BDF166;
+    font-family: Berthold;
+    font-size: 40px;
 }
 
 .about-breakdown {
     width: 1440px;
     height: 3566px;
     background-image: url('../Images/Canva - The Unsplash Book on Brown Wooden Cube Table.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
     display: block;
+}
+
+.about-breakdown h1 {
+    font-family: Schnyder M;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 102px;
+    color: #F3F3F3;
+}
+
+.secret {
+    font-size: 60px;
+    width: 648px;
+    height: 434px;
+    font-family: Schnyder S;
+    align-items: center;
+    color: #F3F3F3;
+}
+
+.about-breakdown p {
+    font-family: Schnyder S;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #F3F3F3;
+    width: 316px;
+    height: 160px;
+}
+
+.about-breakdown ul {
+    font-family: Schnyder S;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #F3F3F3;
+    list-style: none;
+}
+
+.star {
+    font-family: Zapf Dingbats;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 99px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #D8553B;
+}
+
+.hand {
+    font-family: Zapf Dingbats;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: #F3F3F3;
+}
+
+.scissor {
+    font-family: Schnyder M;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: #BDF166;
 }
 
 .build-something {

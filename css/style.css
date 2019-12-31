@@ -449,22 +449,35 @@ footer {
     height: 25px;
     left: 495px;
     top: 748px;
+    text-align: center;
 }
 
-.twitter {
-    /* position: absolute;
-    left: 645px;
-    top: 748px; */
+footer a {
+    margin: 0 40px;
 }
 
-.dribble {
-    /* position: absolute;
-    left: 495px;
-    top: 748px; */
+/* contact */
+
+.contact-section {
+    background-color: #FFF1EE;
 }
 
-.behance {
-    /* position: absolute;
-    left: 795px;
-    top: 748px; */
+.contact-section p {
+    font-family: Schnyder L Demi;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 102px;
+    text-align: center;
+}
+
+.email {
+    color: #BDF166;
+}
+
+.collaborations {
+    font-family: Berthold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 92px;
+    text-transform: uppercase;
 }
