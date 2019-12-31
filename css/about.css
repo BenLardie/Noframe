@@ -59,12 +59,14 @@
     margin: 0 auto;
 }
 
+/* about section */
+
 .about-breakdown {
     width: 1440px;
-    height: 3566px;
-    background-image: url('../Images/Canva - The Unsplash Book on Brown Wooden Cube Table.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: 4565px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)), url('../Images/Canva\ -\ The\ Unsplash\ Book\ on\ Brown\ Wooden\ Cube\ Table.jpg');
+    background-size: cover;
+    background-repeat: round;
     display: block;
 }
 
@@ -74,6 +76,19 @@
     font-weight: 500;
     font-size: 102px;
     color: #F3F3F3;
+}
+
+.about-breakdown p {
+    font-family: Schnyder S;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #F3F3F3;
+    width: 316px;
+    height: 160px;
 }
 
 /* 1. Learning Section */
@@ -177,26 +192,80 @@
     }
 }
 
-.about-breakdown p {
-    font-family: Schnyder S;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 21px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    color: #F3F3F3;
-    width: 316px;
-    height: 160px;
+/* 2. Reframe */
+
+.reframe-line {
+    border: 1px solid #F3F3F3;
+    transform: rotate(90deg);
+    width: 255px;
+    display: block;
+    margin: 0 auto;
 }
 
-.about-breakdown ul {
+.reframe {
+    display: block;
+    height: 1266px;
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.reframe h1 {
+    position: absolute;
+    top: 12%;
+    left: 0;
+}
+
+.reframe p {
+    position: absolute;
+    top: 12%;
+    right: 21%;
+}
+
+br {
+    margin: 10px;
+}
+
+.reframe img {
+    position: absolute;
+    width: 648px;
+    height: 530px;
+    right: -10%;
+    top: 29%;
+}
+
+/* 3. Create */
+
+.create {
+    position: relative;
+    display: block;
+    height: 690px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.create h1 {
+    position: absolute;
+    left: 0;
+    top: 40%;
+}
+
+.create ul {
     font-family: Schnyder S;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     color: #F3F3F3;
     list-style: none;
+    position: absolute;
+    left: 38%;
+    top: 50%;
+}
+
+.create p {
+    position: absolute;
+    right: 0;
+    top: 50%;
 }
 
 .scissor {
@@ -206,6 +275,21 @@
     font-size: 50px;
     color: #BDF166;
 }
+
+.design {
+    display: block;
+    height: 210px;
+    width: 490px;
+    margin: 20px auto;
+    font-family: Schnyder S;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    color: #F3F3F3; 
+    text-align: center;
+}
+
+
 
 .build-something {
     height: 900px;
