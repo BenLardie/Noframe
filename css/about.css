@@ -289,9 +289,74 @@ br {
     text-align: center;
 }
 
+.star-2 {
+    font-family: Zapf Dingbats;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    display: flex;
+    color: #D8553B;
+    animation: spin 3000ms infinite linear;
+    width: 50px;
+    justify-content: center;
+    margin: 50px auto 150px;
+}
 
+.line-design {
+    border: 1px solid #F3F3F3;
+    transform: rotate(90deg);
+    display: block;
+    margin: 0 auto;
+    width: 70px;
+}
 
 .build-something {
     height: 900px;
     display: block;
+    position: relative;
+}
+
+
+.build-something h2 {
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 102px;
+    line-height: 129px;
+    text-decoration-line: underline;
+    color: #F3F3F3;
+    position: absolute;
+    text-align: center;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.build-something img {
+    width: 371px;
+    height: 556px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.build-line-1 {
+    border: 1px solid #F3F3F3;
+    width: 387px;
+    position: absolute;
+    top: 31%;
+    left: 0;
+}
+
+.build-line-2 {
+    border: 1px solid #F3F3F3;
+    width: 387px;
+    position: absolute;
+    top: 31%;
+    right: 0;
 }
