@@ -25,9 +25,6 @@
 }
 
 .home-body {
-    position: relative;
-    width: 1440px;
-    height: 5220px;
     background: #F6F5F5;
 }
 
@@ -160,8 +157,21 @@ nav li:hover {
 
 /* home section */
 
-.home {
+.homepage {
     position: relative;
+    display: block;
+    height: 100vh;
+}
+
+.home-line {
+    border: 1px solid #000000;
+    transform: rotate(90deg);
+    position: absolute;
+    margin-top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 540px;
 }
 
 .logo {
@@ -271,27 +281,15 @@ button {
 /* main services */
 
 .main-services {
-    position: absolute;
-    width: 1005.22px;
-    height: 739px;
-    left: 216.39px;
-    top: 963px;
+    display: block;
 }
 
 .main-services h3 {
-    position: absolute;
-    width: 150px;
-    height: 25px;
-    left: 645px;
-    top: 10px;
+    margin: 0 auto;
     font-family: Berthold;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     text-transform: uppercase;
     color: #000000;
 }
@@ -307,14 +305,10 @@ button {
     color: #000000;
 }
 
-/* .main-services li:nth-child(even) {
-    text-align: left;
+.main-services ul {
+    list-style: none;
+    text-align: center;
 }
-
-.main-services li:nth-child(odd) {
-    text-align: right;
-    color: pink;
-} */
 
 .art {
     /* position: absolute; */
@@ -353,10 +347,12 @@ button {
 }
 
 /* work examples */
-
+.case-title {
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: Berthold;
+}
 .cases {
-    position: absolute;
-    top: 1851px;
     display: block;
 }
 
@@ -393,6 +389,10 @@ button {
     background-color: #E5E5E5;
 }
 
+.case:nth-child(odd) .right {
+    background-color: #D8553B;
+}
+
 .right img {
     display: block;
     width: 404.56px;
@@ -421,8 +421,7 @@ button {
 /* more */
 
 .more {
-    position: absolute;
-    top: 3819px;
+    display: block;
 }
 
 .more h1 {
@@ -432,8 +431,7 @@ button {
 /* contact */
 
 .contact-section {
-    position: absolute;
-    top: 4523px;
+    display: block;
 }
 
 /* footer */
