@@ -127,7 +127,7 @@ nav li:hover {
 
 /* status bar */
 #bar-holder {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 8px;
     background: #F6F5F5;
@@ -282,10 +282,11 @@ button {
 
 .main-services {
     display: block;
+    height: 100vh;
 }
 
 .main-services h3 {
-    margin: 0 auto;
+    text-align: center;
     font-family: Berthold;
     font-style: normal;
     font-weight: normal;
@@ -295,31 +296,26 @@ button {
 }
 
 .main-services span {
-    font-family: Schnyder L;
+    font-family: Schnyder L Demi;
     font-style: normal;
     font-weight: 500;
     font-size: 85px;
-    display: flex;
-    align-items: center;
-    text-align: center;
     color: #000000;
+    padding-bottom: 15px;
 }
 
 .main-services ul {
     list-style: none;
     text-align: center;
+    padding-top: 10%;
 }
 
 .art {
-    /* position: absolute; */
-    left: 216.39px;
-    /* top: 30px; */
+    padding-right: 35%;
 }
 
 .product {
-    /* position: absolute; */
-    left: 470.37px;
-    /* top: 153.17px; */
+    padding-right: 15%;
 }
 
 .visual {
@@ -371,17 +367,22 @@ button {
     font-style: normal;
     font-weight: 500;
     font-size: 60px;
-    text-align: center;
+    text-align: left;
+    padding-top: 20%;
+    padding-left: 20%;
 }
 
 .case h3 {
-    text-align: center;
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 20%;
 }
 
 .case p {
-    max-width: 75%;
-    text-align: center;
+    width: 60%;
+    text-align: left;
     margin: 0 auto;
+    padding-top: 20%;
 }
 
 .right {
@@ -422,16 +423,21 @@ button {
 
 .more {
     display: block;
+    height: 100vh;
 }
 
 .more h1 {
     text-align: center;
+    font-family: Circular Std;
+    font-size: 102px;
+    color: #000000;
+    padding-top: 15%;
 }
 
-/* contact */
-
-.contact-section {
-    display: block;
+.more-line {
+    border-bottom: 7px solid #000000;
+    width: 845px;
+    margin: 0 auto;
 }
 
 /* footer */
@@ -458,6 +464,8 @@ footer a {
 
 .contact-section {
     background-color: #FFF1EE;
+    display: block;
+    height: 100vh;
 }
 
 .contact-section p {
@@ -465,7 +473,9 @@ footer a {
     font-style: normal;
     font-weight: 500;
     font-size: 102px;
-    text-align: center;
+    text-align: left;
+    padding-top: 10%;
+    padding-left: 5%;
 }
 
 .email {
