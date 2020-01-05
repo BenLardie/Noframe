@@ -318,28 +318,12 @@ button {
     padding-right: 15%;
 }
 
-.visual {
-    /* position: absolute; */
-    left: 216.39px;
-    /* top: 356px; */
-}
-
-.interaction {
-    /* position: absolute; */
-    left: 344.91px;
-    /* top: 509px; */
-}
-
-.mobile {
-    /* position: absolute; */
-    left: 216.39px;
-    /* top: 662px; */
+.immersive {
+    padding-right: 5%;
 }
 
 .animation {
-    /* position: absolute; */
-    left: 434px;
-    /* top: 815px; */
+    margin-left: 5%;
 }
 
 /* work examples */
