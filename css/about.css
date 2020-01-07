@@ -4,6 +4,7 @@
 }
 
 
+
 .about-landing {
     height: 100vh;
     font-family: Schnyder L Demi;
@@ -11,10 +12,10 @@
     font-weight: 500;
     font-size: 70px;
     background: #E5E5E5;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-basis: 100%;
-    flex: 1;
+    flex: 1; */
     position: relative;
 }
 
@@ -62,7 +63,7 @@
 /* about section */
 
 .about-breakdown {
-    width: 1440px;
+    width: 100%;
     height: 4565px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)), url('../Images/Canva\ -\ The\ Unsplash\ Book\ on\ Brown\ Wooden\ Cube\ Table.jpg');
     background-size: cover;
@@ -226,12 +227,19 @@ br {
     margin: 10px;
 }
 
-.reframe img {
+#reframe-image {
     position: absolute;
     width: 648px;
     height: 530px;
     right: -10%;
     top: 29%;
+}
+
+#circle-one {
+    position: absolute;
+    width: 50%;
+    left: -30%;
+    top: 25%;
 }
 
 /* 3. Create */
@@ -266,7 +274,7 @@ br {
     margin-left: 20px;
 }
 
-.create p {
+.create-blurb {
     position: absolute;
     right: 0;
     top: 50%;
@@ -280,11 +288,16 @@ br {
     color: #BDF166;
 }
 
-.design {
+.design{
+    position: relative;
+    overflow: hidden;
+}
+
+.design-title {
     display: block;
     height: 210px;
     width: 490px;
-    margin: 20px auto;
+    margin: 100px auto 0;
     font-family: Schnyder S;
     font-style: normal;
     font-weight: 500;
@@ -365,6 +378,9 @@ br {
     right: 0;
 }
 
-#circle {
-    width: 50%;
+#circle-two {
+    width: 40%;
+    position: absolute;
+    right: -15%;
+    top: 6%;
 }

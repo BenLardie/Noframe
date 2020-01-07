@@ -63,7 +63,7 @@ header {
 
 nav {
     position: relative;
-    width: 1440px;
+    width: 100vw;
     height: 141px;
     left: 0px;
     top: 0px;
@@ -242,7 +242,8 @@ button {
     align-items: center;
     text-align: center;
     color: #D8553B;
-    padding: 15px;
+    padding: 30px;
+    overflow: visible;
     transition: ease-in 0.4s;
     border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
 
@@ -265,16 +266,16 @@ button {
 
 @keyframes blob {
     0%, 100% {
-        border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+        border-radius: 64% 36% 27% 63% / 55% 58% 42% 45%;
     }
     25% {
-        border-radius: 44% 56% 37% 63% / 45% 88% 52% 55%;
+        border-radius: 44% 56% 37% 63% / 45% 60% 52% 55%;
     }
     50% {
-        border-radius: 49% 56% 17% 88% / 42% 72% 22% 66%;
+        border-radius: 49% 56% 17% 61% / 42% 62% 22% 66%;
     }
     75% {
-        border-radius: 22% 36% 88% 92% / 19% 38% 22% 65%;
+        border-radius: 22% 36% 69% 44% / 19% 38% 22% 65%;
     }
 }
 
