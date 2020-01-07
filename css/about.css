@@ -204,7 +204,7 @@
 
 .reframe {
     display: block;
-    height: 1266px;
+    height: 1000px;
     position: relative;
     width: 75%;
     margin: 0 auto;
@@ -260,6 +260,10 @@ br {
     position: absolute;
     left: 38%;
     top: 50%;
+}
+
+.create li {
+    margin-left: 20px;
 }
 
 .create p {
@@ -359,4 +363,8 @@ br {
     position: absolute;
     top: 31%;
     right: 0;
+}
+
+#circle {
+    width: 50%;
 }
