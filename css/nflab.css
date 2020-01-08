@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Schnyder L Demi;
+    src: url('../fonts/Schnyder-L-Demi.otf');
+}
+
+@font-face {
+    font-family: Circular Std;
+    src: url('../fonts/CircularStd-Book.otf');
+}
+
+main {
+    background-image: url('../Images/labbg.png');
+    height: 100%;
+    width: 100vw;
+    background-size: contain;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+nav {
+    position: relative;
+    width: 75%;
+    height: 110px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: Schnyder L Demi;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 102px;
+    color: #F3F3F3;
+    position: absolute;
+    left: 0;
+}
+
+.home-link {
+    font-family: Circular Std;
+    font-size: 16px;
+    align-items: center;
+    color: #F3F3F3;
+    position: absolute;
+    right: 0;
+    right: 38%;
+    top: 50%;
+}
+
+.nav-line {
+    border: 1px solid #BDF166;
+    width: 190px;
+    position: absolute;
+    left: 28%;
+    top: 60%;
+}
+
+.animation {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+/* wayfinder */
+
+.wayfinder {
+    width: 90%;
+    height: 100vh;
+    position: relative;
+    margin: 160px auto 0;
+}
+
+.wayfinder-holder {
+
+}
+
+.wayfinder-left {
+    width: 48%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.wayfinder-right {
+    width: 48%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+}
+
+.box {
+    width: 89px;
+    height: 612px;
+    margin: 0 4px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.place-holder {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.place-holder-box {
+    position: absolute;
+    width: 546px;
+    height: 536px;
+    background: #C4C4C4;
+    right: 0;
+    top: 20%;
+}
+
+article {
+    width: 80%;
+    margin: 170px auto 150px;
+    background-color: white;
+    height: 3878px;
+}
