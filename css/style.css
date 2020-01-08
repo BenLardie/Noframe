@@ -89,7 +89,7 @@ nav li {
     transition: .5s;
 }
 
-nav li::before {
+/* nav li::before {
     transform: translate3d(0, 140%, 0);
 }
 
@@ -99,7 +99,8 @@ nav li:hover::before {
 
 nav li:hover {
     transform: translate3d(0, -140%, 0);
-}
+} */
+
 
 .work {
     position: absolute;
@@ -172,6 +173,8 @@ nav li:hover {
     right: 0;
     margin: 0 auto;
     width: 540px;
+    top: 52%;
+    z-index: -1;
 }
 
 .logo {
@@ -245,8 +248,7 @@ button {
     padding: 30px;
     overflow: visible;
     transition: ease-in 0.4s;
-    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
-
+    border-radius: 30%;
 }
 
 .light:hover {
@@ -266,16 +268,16 @@ button {
 
 @keyframes blob {
     0%, 100% {
-        border-radius: 64% 36% 27% 63% / 55% 58% 42% 45%;
+        border-radius: 24% 36% 27% 23% / 45% 38% 42% 45%;
     }
     25% {
-        border-radius: 44% 56% 37% 63% / 45% 60% 52% 55%;
+        border-radius: 44% 56% 37% 23% / 45% 18% 52% 55%;
     }
     50% {
-        border-radius: 49% 56% 17% 61% / 42% 62% 22% 66%;
+        border-radius: 49% 56% 17% 21% / 42% 19% 22% 26%;
     }
     75% {
-        border-radius: 22% 36% 69% 44% / 19% 38% 22% 65%;
+        border-radius: 22% 36% 50% 44% / 19% 38% 22% 50%;
     }
 }
 
@@ -311,6 +313,48 @@ button {
     padding-top: 10%;
 }
 
+.service-list li {
+    position: relative;
+}
+
+.service-list li:nth-child(odd):after{
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: black;
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+}
+
+.service-list li:nth-child(odd):hover:after {
+    width: 50%;
+    left: 0;
+    background: black;
+}
+
+.service-list li:nth-child(even):after{
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: black;
+    transition: width .2s ease-out;
+    -webkit-transition: width .2s ease-out;
+}
+
+.service-list li:nth-child(even):hover:after {
+    width: 70%;
+    right: 0;
+    background: black;
+}
+
 .art {
     padding-right: 35%;
 }
@@ -328,7 +372,7 @@ button {
 }
 
 /* work examples */
-.case-title {
+.case-header {
     text-align: center;
     padding-bottom: 25px;
     font-family: Berthold;
@@ -346,8 +390,11 @@ button {
     flex-basis: 100%;
     flex: 1;
 }
+.case:nth-child(odd) .left {
+    background-color:  #FFF1EE;
+}
 
-.case h2 {
+.case-title {
     font-family: Schnyder S Demi;
     font-style: normal;
     font-weight: 500;
@@ -357,13 +404,13 @@ button {
     padding-left: 20%;
 }
 
-.case h3 {
+.case-subtitle {
     text-align: left;
     padding-top: 5%;
     padding-left: 20%;
 }
 
-.case p {
+.case-blurb {
     width: 60%;
     text-align: left;
     margin: 0 auto;
@@ -379,7 +426,7 @@ button {
     background-color: #D8553B;
 }
 
-.right img {
+.case-picture-right {
     display: block;
     width: 404.56px;
     height: 539.41px;
@@ -398,7 +445,7 @@ button {
     position: relative;
 }
 
-.left img {
+.case-picture-left {
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -411,7 +458,7 @@ button {
     height: 100vh;
 }
 
-.more h1 {
+.more-header {
     text-align: center;
     font-family: Circular Std;
     font-size: 102px;

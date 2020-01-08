@@ -38,6 +38,20 @@ document.addEventListener('mousemove', e => {
   cursor.setAttribute('style', `top: ${e.pageY + 12}px; left:${e.pageX + 12}px;`);
 });
 
+// window.addEventListener('scroll', e => {
+//   const target = document.querySelector('.main-services');
+//   let scrolled = window.pageYOffset;
+//   let rate = scrolled * 2;
+//   console.log(rate);
+//   target.style.transform = `translate3d('0px, ${rate}px, 0px);`;
+// });
+
+// const services = document.getElementsByClassName('main-services');
+// new simpleParallax(services, {
+// 	orientation: 'right'
+// });
+
+
 // footer
 
 const footer = document.querySelector('footer');

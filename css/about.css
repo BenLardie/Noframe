@@ -64,7 +64,7 @@
 
 .about-breakdown {
     width: 100%;
-    height: 4565px;
+    height: 4500px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.77)), url('../Images/Canva\ -\ The\ Unsplash\ Book\ on\ Brown\ Wooden\ Cube\ Table.jpg');
     background-size: cover;
     background-repeat: round;
@@ -208,7 +208,7 @@
     height: 1000px;
     position: relative;
     width: 75%;
-    margin: 0 auto;
+    margin: 55px auto 0;
 }
 
 .reframe h1 {
@@ -255,7 +255,7 @@ br {
 .create h1 {
     position: absolute;
     left: 0;
-    top: 40%;
+    top: 00%;
 }
 
 .create ul {
@@ -267,17 +267,19 @@ br {
     list-style: none;
     position: absolute;
     left: 38%;
-    top: 50%;
+    top: 5%;
 }
 
 .create li {
     margin-left: 20px;
+    position: relative;
+    padding-bottom: 10px;
 }
 
 .create-blurb {
     position: absolute;
-    right: 0;
-    top: 50%;
+    right: -12%;
+    top: 0%;
 }
 
 .scissor {
@@ -286,6 +288,24 @@ br {
     font-weight: 500;
     font-size: 50px;
     color: #BDF166;
+    position: absolute;
+    left: -80px;
+    top: -10px;
+    visibility: hidden;
+}
+
+.create li:hover .scissor {
+    visibility: visible;
+    animation: scissor-spin 3000ms infinite linear;
+}
+
+@keyframes scissor-spin {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-25deg) ;
+    }
 }
 
 .design{
@@ -383,4 +403,23 @@ br {
     position: absolute;
     right: -15%;
     top: 6%;
+}
+
+footer {
+    /* position: relative; */
+    font-family: Schnyder S Demi;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    position: absolute;
+    width: 450px;
+    height: 25px;
+    left: 495px;
+    top: 748px;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    margin: 0 40px;
 }
