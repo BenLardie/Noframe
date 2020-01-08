@@ -299,6 +299,10 @@ br {
     animation: scissor-spin 3000ms infinite linear;
 }
 
+.create li:hover {
+    color: #BDF166; ;
+}
+
 @keyframes scissor-spin {
     0%, 100% {
         transform: rotate(0deg);
