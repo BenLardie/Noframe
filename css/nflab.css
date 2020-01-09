@@ -14,6 +14,16 @@
     src: url('../fonts/CircularStd-Book.otf');
 }
 
+@font-face {
+    font-family: Berthold;
+    src: url('../fonts/Berthold-Akzidenz-Grotesk-BE-Regular.otf');
+}
+
+@font-face {
+    font-family: Schnyder S Demi;
+    src: url('../fonts/Schnyder-S-Demi.otf');
+}
+
 main {
     background-image: url('../Images/labbg.png');
     height: 100%;
@@ -127,4 +137,124 @@ article {
     margin: 170px auto 150px;
     background-color: white;
     height: 3878px;
+}
+
+.article-details {
+    /* position: relative; */
+    width: 90%;
+    padding-top: 50px;
+    margin-left: 5%;
+
+}
+
+.article-details span {
+    font-family: Berthold;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+.read-time {
+    margin-left: 30px ;
+}
+
+.article-title {
+    margin: 15px auto 105px;
+    font-family: Schnyder S Demi;
+    font-size: 60px;
+    width: 90%;
+}
+
+.paragraph-one {
+    width: 60%;
+    margin: 0 auto 50px;
+    font-family: Schnyder L Demi;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.preview-holder {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    height: 800px;
+}
+
+.preview {
+    width: 648px;
+    height: 677px;
+    position: absolute;
+}
+
+.preview.one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.preview.one:hover {
+    z-index: 4;
+    transition: ease-in;
+}
+
+.preview.two {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.preview.two:hover {
+    z-index: 4;
+    transition: ease-in;
+}
+
+
+.preview.three {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.preview.three:hover {
+    z-index: 4;
+    transition: ease-in;
+}
+
+
+.paragraph-two {
+    width: 80%;
+    height: 543px;
+    font-family: Schnyder L Demi;
+    font-size: 19px;
+    display: block;
+    columns: 2 13em;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.article-pic-2 {
+    width: 542px;
+    height: 677px;
+    margin: 10%;
+}
+
+.paragraph-three {
+    height: 170px;
+    font-family: Schnyder L;
+    font-size: 21px;
+    width: 75%;
+    margin: 0 auto 105px;
+}
+
+
+.article-pic-3 {
+    width: 542px;
+    height: 677px;
+    margin-left: 35%;
 }
