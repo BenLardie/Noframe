@@ -9,6 +9,11 @@
     src: url('../fonts/CircularStd-Book.otf');
 }
 
+@font-face {
+    font-family: Schnyder L Demi;
+    src: url('../fonts/Schnyder-L-Demi.otf');
+}
+
 /* Nav bar */
 
 header {
