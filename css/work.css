@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Circular Std;
+    src: url('../fonts/CircularStd-Book.otf');
+}
+
+/* Nav bar */
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+
+nav {
+    position: relative;
+    width: 100vw;
+    height: 141px;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+}
+
+nav span {
+    display: block;
+    font-size: 36px;
+    line-height: 46px;
+}
+
+a {
+    font-family: Circular Std;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+}
+
+nav li {
+    list-style: none;
+    transition: .5s;
+}
+
+.work {
+    position: absolute;
+    left: 64px;
+    top: 30px;
+}
+
+.about {
+    position: absolute;
+    left: 230px;
+    top: 30px;
+}
+
+.lab {
+    position: absolute;
+    left: 1054px;
+    top: 30px;
+}
+
+.contact {
+    position: absolute;
+    left: 1226px;
+    top: 30px;
+}
+
+.home {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* page details */
+
+
+.work-page {
+    width: 100vw;
+    height: 1800px;
+    padding-top: 105px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(36, 86, 43, 0.4) 100%), #000000;
+}
+
+.work-one {
+    height: 648px;
+    margin: 105px auto 0;
+    width: 90%;
+    text-align: center;
+}
+
+.work-link {
+    display: block;
+    /* margin: 0 auto; */
+    font-family: Schnyder L Demi;
+    font-size: 110px;
+    line-height: 125px;
+    text-decoration-line: underline;
+    color: #456852;
+}
+
+.work-two {
+    height: 648px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.work-link-two {
+    font-family: Schnyder L Demi;
+    display: block;
+    font-weight: 500;
+    font-size: 110px;
+    line-height: 125px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #24562B;
+}
