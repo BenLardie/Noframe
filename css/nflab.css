@@ -24,6 +24,65 @@
     src: url('../fonts/Schnyder-S-Demi.otf');
 }
 
+
+html {
+    caret-color: white;
+    cursor: url('../Images/cursor-white.png') 2 2, auto;	
+}
+
+/* loader */
+
+.loader {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 99;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* cursor */
+
+.cursor {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+    transform: translate(-50%, -50%);
+    /* z-index: 100; */
+}
+
+/* progress bar */
+
+/* status bar */
+#bar-holder {
+    position: fixed;
+    height: 100%;
+    width: 8px;
+    background: #F6F5F5;
+    z-index: 6;
+}
+
+#status-bar {
+    width: 7px;
+    left: 0px;
+    top: 0px;
+    background: #BDF166;
+}
+
 main {
     background-image: url('../Images/labbg.png');
     height: 100%;
