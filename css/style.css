@@ -139,7 +139,6 @@ nav li:hover {
     position: fixed;
     height: 100%;
     width: 8px;
-    background: #F6F5F5;
     z-index: 6;
 }
 
@@ -158,10 +157,11 @@ nav li:hover {
     border: 2px solid black;
     border-radius: 50%;
     position: absolute;
+    pointer-events: none;
     transition-duration: 400ms;
     transition-timing-function: ease-out;
     transform: translate(-50%, -50%);
-    /* z-index: 100; */
+    z-index: 100;
 }
 
 /* home section */
