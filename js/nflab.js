@@ -48,31 +48,36 @@ window.addEventListener('wheel', function(event) {
 const logo = document.querySelector('.logo');
 const homeLink = document.querySelector('.home-link');
 const article = document.querySelector('article');
+const navLine = document.querySelector('.nav-line')
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY === 0) {
-    homeLink.style.right = '50%';
-  }
   if (window.scrollY >= article.offsetTop) {
     logo.style.visibility = 'hidden';
     homeLink.innerHTML = '^';
     homeLink.style.fontSize = '50px';
+}
+else if (window.scrollY === 0) {
+    homeLink.style.right = '50%';
+    navLine.style.visibility = 'visible';
+    cursor.innerHTML = '☟';
   } else {
+    homeLink.style.left = null;
     homeLink.style.right = '2%';
     homeLink.innerHTML = 'Back to home';
     homeLink.style.fontSize = '16px';
     logo.style.visibility = 'visible';
+    navLine.style.visibility = 'hidden';
   }
 });
 
 homeLink.addEventListener('mouseover', () => {
-    cursor.innerHTML= '🏠'
-    homeLink.style.cursor = 'none';
-})
+  cursor.innerHTML = '🏠';
+  homeLink.style.cursor = 'none';
+});
 
 homeLink.addEventListener('mouseleave', () => {
-    cursor.innerHTML= '☟'
-})
+  cursor.innerHTML = '☟';
+});
 
 // wayfinder
 
