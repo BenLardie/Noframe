@@ -73,14 +73,12 @@ nav {
 nav span {
     display: block;
     font-size: 36px;
-    line-height: 46px;
 }
 
 a {
     font-family: Circular Std;
     text-decoration: none;
     font-size: 16px;
-    line-height: 20px;
     color: black;
 }
 
@@ -231,7 +229,6 @@ button {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 25px;
     align-items: center;
     text-align: center;
     color: #000000;
@@ -249,7 +246,6 @@ button {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 25px;
     align-items: center;
     text-align: center;
     color: #D8553B;
@@ -313,7 +309,6 @@ button {
     font-size: 85px;
     color: #000000;
     padding-bottom: 15px;
-    line-height: 0;
 }
 
 .main-services ul {
