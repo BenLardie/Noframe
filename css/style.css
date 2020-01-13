@@ -30,7 +30,10 @@
 
 html {
     cursor: url('../Images/cursor.png') 2 2, auto;	
-    line-height: normal;
+}
+
+.body {
+    line-height: normal !important;
 }
 
 /* loader */
