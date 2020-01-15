@@ -8,8 +8,8 @@
     font-family: Circular Std;
     src: url('../fonts/CircularStd-Book.otf');
 }
-
-/* @font-face {
+/* 
+@font-face {
     font-family: Schnyder L Demi;
     src: url('../fonts/Schnyder-L-Demi.otf');
 } */
@@ -56,6 +56,11 @@ html {
     transition-timing-function: ease-out;
     transform: translate(-50%, -50%);
     /* z-index: 100; */
+}
+
+.cursor.animated {
+    width: 200px;
+    height: 500px;
 }
 
 /* progress bar */

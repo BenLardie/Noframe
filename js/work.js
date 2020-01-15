@@ -50,12 +50,13 @@ const images = [
 ];
 window.addEventListener('DOMContentLoaded', () => {
   workLinks.forEach(link => {
-    link.addEventListener('mouseover', () => {
-        cursor.style.height = '500px';
-        cursor.style.width = '200px';
+    link.addEventListener('mouseover', event => {
+      const previewCursor = cursor.classList.add('animated');
+        // cursor.style.height = '500px';
+        // cursor.style.width = '200px';
     //   cursor.classList.add('work-preview');
     //   prev.style.zIndex = 4;
-      cursor.style.backgroundImage = `url(/${
+      previewCursor.add.style.backgroundImage = `url(${
         images[event.target.dataset.pic]
       }) cover;`;
     });
