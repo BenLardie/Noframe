@@ -157,10 +157,20 @@ nav li {
     margin: 105px auto 0;
     width: 90%;
     text-align: center;
+    position: relative;
+}
+
+.cursor.work-preview {
+    position: absolute;
+    height: 500px;
+    width: 200px;
+    /* visibility: hidden; */
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
 }
 
 .work-link {
-    display: block;
+    display: inline-block;
     /* margin: 0 auto; */
     font-family: Schnyder L Demi;
     font-size: 110px;
@@ -174,11 +184,12 @@ nav li {
     width: 90%;
     text-align: center;
     margin: 0 auto;
+    position: relative;
 }
 
-.work-link-two {
+.work-link.two {
     font-family: Schnyder L Demi;
-    display: block;
+    display: inline-block;
     font-weight: 500;
     font-size: 110px;
     line-height: 125px;
