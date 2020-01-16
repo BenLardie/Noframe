@@ -1,6 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Circular Std;
+    src: url('../fonts/CircularStd-Book.otf');
+}
+
 @font-face {
     font-family: Berthold;
     src: url('../fonts/Berthold-Akzidenz-Grotesk-BE-Regular.otf');
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+
+nav {
+    position: relative;
+    width: 100vw;
+    height: 141px;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+}
+
+nav span {
+    display: block;
+    font-size: 36px;
+}
+
+a {
+    font-family: Circular Std;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+nav span:hover {
+    text-shadow: -4px 4px 0.5px white,
+    -8px 8px 0 black;
+    color: #D8553B;
+}
+
+nav li {
+    list-style: none;
+    transition: .5s;
+}
+
+.work {
+    position: absolute;
+    left: 64px;
+    top: 30px;
+}
+
+.about {
+    position: absolute;
+    left: 230px;
+    top: 30px;
+}
+
+.lab {
+    position: absolute;
+    left: 1054px;
+    top: 30px;
+}
+
+.contact {
+    position: absolute;
+    left: 1226px;
+    top: 30px;
+}
+
+.home {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 
@@ -409,6 +490,61 @@ br {
     top: 6%;
 }
 
+.something {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    animation: build-something 8s linear infinite;
+    opacity: 0;
+}
+
+@keyframes build-something {
+    0% {
+        font-family: Circular Std;
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    20% {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(0px);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    60% {
+        opacity: 0;
+        transform: translateY(50px);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(50px);
+        font-family: monospace;
+    }
+}
+
+.something:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.something:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.something:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.something:nth-child(4) {
+    animation-delay: 6s;
+}
+.something:nth-child(5) {
+    animation-delay: 8s;
+}
+
 footer {
     /* position: relative; */
     font-family: Schnyder S Demi;
@@ -421,9 +557,10 @@ footer {
     left: 495px;
     top: 748px;
     text-align: center;
-    color: white;
+    
 }
 
 footer a {
     margin: 0 40px;
+    color: white;
 }

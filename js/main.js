@@ -52,6 +52,20 @@ document.addEventListener('mousemove', e => {
 // });
 
 
+
+const leftPictures = document.querySelectorAll(".case-picture-left");
+
+
+leftPictures.forEach(pic => {
+  pic.addEventListener('mousemove', e => {
+    console.log('is this thing on?')
+    pic.style.backgroundPositionX = -e.offsetX + "px";
+    pic.style.backgroundPositionY = -e.offsetY + "px";
+  })
+})
+
+
+
 // footer
 
 const footer = document.querySelector('footer');
