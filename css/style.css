@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overscroll-behavior: none;
+}
+
 @font-face {
     font-family: Circular Std;
     src: url('../fonts/CircularStd-Book.otf');
@@ -15,7 +19,7 @@
 }
 
 @font-face {
-    font-family: Berthold;
+    font-family: Berthold Akzidenz Grotesk BE;
     src: url('../fonts/Berthold-Akzidenz-Grotesk-BE-Regular.otf');
 }
 
@@ -29,7 +33,7 @@
 }
 
 html {
-    cursor: url('../Images/cursor.png') 2 2, auto;	
+    cursor: none;	
 }
 
 .body {
@@ -38,17 +42,16 @@ html {
 
 /* loader */
 
-.loader {
+#loader {
     position: fixed;
     z-index: 99;
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: black;
-    display: none;
 }
 
-.loader.hidden {
+#loader.hidden {
+    display: none;
     animation: fadeOut 1s; 
     animation-fill-mode: forwards;
 }
@@ -87,30 +90,27 @@ a {
     text-decoration: none;
     font-size: 16px;
     color: black;
+    cursor: none;
+}
+
+#anim {
+    width: 100%;
+}
+
+a.green-mode {
+    color: white;
 }
 
 nav span:hover {
     text-shadow: -4px 4px 0.5px white,
     -8px 8px 0 black;
-    color: #D8553B;
+    color: #D8553B; 
 }
 
 nav li {
     list-style: none;
     transition: .5s;
 }
-
-/* nav li::before {
-    transform: translate3d(0, 140%, 0);
-}
-
-nav li:hover::before {
-    transform: translate3d(0, 0, 0);
-}
-
-nav li:hover {
-    transform: translate3d(0, -140%, 0);
-} */
 
 
 .work {
@@ -143,6 +143,7 @@ nav li:hover {
     left: 0;
     right: 0;
     margin: 0 auto;
+    font-family: Berthold;
 }
 
 /* status bar */
@@ -183,8 +184,12 @@ nav li:hover {
     height: 100vh;
 }
 
+.homepage.green-mode {
+    background-color: #24562B;
+}
+
 .home-line {
-    border: 1px solid #000000;
+    border-bottom: 1px solid #000000;
     transform: rotate(90deg);
     position: absolute;
     margin-top: 20%;
@@ -193,7 +198,20 @@ nav li:hover {
     margin: 0 auto;
     width: 540px;
     top: 52%;
-    z-index: -1;
+    /* z-index: 1; */
+}
+
+.home-line.green-mode {
+    border-bottom: 1px solid white;
+    transform: rotate(90deg);
+    position: absolute;
+    margin-top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 540px;
+    top: 52%;
+    z-index: 0;
 }
 
 .logo {
@@ -211,7 +229,7 @@ nav li:hover {
     margin: 0 auto;
     display: block;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
 .demo {
@@ -222,6 +240,7 @@ nav li:hover {
     right: 0;
     margin: 0 auto;
     position: absolute;
+    z-index: 1;
 }
 
 .demo:hover {
@@ -249,11 +268,19 @@ nav li:hover {
     color: #000000;
 }
 
+.button.light.green-mode {
+    color: white;
+}
+
 .button.green {
     position: absolute;
     left: 1058px;
     top: 673px;
-    color: #D8553B;
+    color: #487459;
+}
+
+.button.green.green-mode {
+    color: white;
 }
 
 .button:hover::before {
@@ -386,9 +413,8 @@ nav li:hover {
 
 .main-services h3 {
     text-align: center;
-    font-family: Berthold;
-    font-style: normal;
-    font-weight: normal;
+    font-family: Berthold Akzidenz Grotesk BE;
+    font-style: Condensed;
     font-size: 18px;
     text-transform: uppercase;
     color: #000000;
@@ -582,10 +608,15 @@ nav li:hover {
 
 /* work examples */
 .case-header {
-    text-align: center;
     padding-bottom: 25px;
-    font-family: Berthold;
+    text-align: center;
+    font-family: Berthold Akzidenz Grotesk BE;
+    font-style: Condensed;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000000;
 }
+
 .cases {
     display: block;
 }
@@ -687,7 +718,7 @@ nav li:hover {
 }
 
 .more-line {
-    border-bottom: 7px solid #000000;
+    border-bottom: 0.5px solid #000000;
     width: 845px;
     margin: 0 auto;
 }
@@ -696,7 +727,6 @@ nav li:hover {
 
 footer {
     /* position: relative; */
-    font-family: Schnyder S Demi;
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
@@ -710,6 +740,7 @@ footer {
 
 footer a {
     margin: 0 40px;
+    font-family: Schnyder S Demi;
 }
 
 /* contact */

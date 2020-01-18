@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,8 +11,10 @@
     <title>Noframe</title>
 </head>
 <body class="home-body">
+    <script src="./js/loader.js"></script>
+    <script src="./js/sketch.js"></script>
     <main>
-        <div class="loader"></div>
+        <div id="loader"></div>
         <header>
             <nav>
                 <ul>
@@ -34,16 +38,10 @@
                 <div class="button light">light mode<span></span></div>
                 <div class="button green">green mode<span></span></div>
         </div>
-        <section class="main-services">
+        <!-- <section class="main-services"> -->
             <h3>MAIN SERVICES</h3>
-            <ul class="service-list">
-                <li><span class="art">Art direction</span></li>
-                <li><span class="product" data-text="Product design">Product design</span></li>
-                <li><span class="moving">Moving Images</span></li>
-                <li><span class="immersive">Immersive Experiences</span></li>
-                <li><span class="animation">Animation</span></li>
-            </ul>
-        </section>
+            <div id="anim"></div>
+        <!-- </section> -->
         <section class="cases">
             <h1 class="case-header">SOME CASES</h1>
             <div class="case">
@@ -84,6 +82,8 @@
     </main>
     <!-- <script src="https://rawcdn.githack.com/BenLardie/Noframe/d792714dbf742aafd17d84c43353a87a4a240be2/js/main.js"></script> -->
     <script src="./js/main.js"></script>
+    <script src="lottie.js"></script>
+    <script src="script.js"></script>
     <!-- <script src="./js/movingPicture.js"></script> -->
 </body class="home-body">
 </html>

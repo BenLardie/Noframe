@@ -1,11 +1,3 @@
-// loader
-
-window.addEventListener('load', () => {
-  const loader = document.querySelector('.loader');
-  console.log('loading');
-  loader.className += ' hidden';
-});
-
 // progress bar
 
 const progressBar = () => {
@@ -35,23 +27,8 @@ const links = document.querySelectorAll('a');
 // })
 
 document.addEventListener('mousemove', e => {
-  cursor.setAttribute('style', `top: ${e.pageY + 12}px; left:${e.pageX + 12}px;`);
+  cursor.setAttribute('style', `top: ${e.pageY}px; left:${e.pageX}px;`);
 });
-
-// window.addEventListener('scroll', e => {
-//   const target = document.querySelector('.main-services');
-//   let scrolled = window.pageYOffset;
-//   let rate = scrolled * 2;
-//   console.log(rate);
-//   target.style.transform = `translate3d('0px, ${rate}px, 0px);`;
-// });
-
-// const services = document.getElementsByClassName('main-services');
-// new simpleParallax(services, {
-// 	orientation: 'right'
-// });
-
-
 
 const leftPictures = document.querySelectorAll(".case-picture-left");
 
@@ -64,7 +41,34 @@ leftPictures.forEach(pic => {
   })
 })
 
+// green-mode 
 
+const homePage = document.querySelector('.homepage');
+const navLinks = document.querySelectorAll('a');
+const homeLine = document.querySelector('.home-line');
+const button = document.querySelectorAll('.button');
+const lightMode = document.querySelector('.button.light');
+const greenMode = document.querySelector('.button.green');
+
+greenMode.addEventListener('click', () => {
+  homePage.classList.add('green-mode');
+  navLinks.forEach(link => {
+    link.classList.add('green-mode');
+  });
+  homeLine.classList.add('green-mode');
+  greenMode.classList.add('green-mode');
+  lightMode.classList.add('green-mode');
+})
+
+lightMode.addEventListener('click', () => {
+  homePage.classList.remove('green-mode');
+  navLinks.forEach(link => {
+    link.classList.remove('green-mode');
+  });
+  homeLine.classList.remove('green-mode');
+  lightMode.classList.remove('green-mode');
+  greenMode.classList.remove('green-mode');
+})
 
 // footer
 

@@ -51,6 +51,7 @@ const images = [
 window.addEventListener('DOMContentLoaded', () => {
   workLinks.forEach(link => {
     link.addEventListener('mouseover', event => {
+      console.log(event)
       const previewCursor = cursor.classList.add('animated');
         // cursor.style.height = '500px';
         // cursor.style.width = '200px';

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overscroll-behavior: none;
+}
+
 @font-face {
     font-family: Circular Std;
     src: url('../fonts/CircularStd-Book.otf');
@@ -12,6 +16,31 @@
 @font-face {
     font-family: Berthold;
     src: url('../fonts/Berthold-Akzidenz-Grotesk-BE-Regular.otf');
+}
+
+@font-face {
+    font-family: Schnyder L Demi;
+    src: url('../fonts/Schnyder-L-Demi.otf');
+}
+
+@font-face {
+    font-family: Schnyder S Demi;
+    src: url('../fonts/Schnyder-S-Demi.otf');
+}
+
+/* cursor */
+
+.cursor {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+    transform: translate(-50%, -50%);
+    z-index: 100;
 }
 
 header {
@@ -82,6 +111,7 @@ nav li {
     left: 0;
     right: 0;
     margin: 0 auto;
+    font-family: Berthold;
 }
 
 
@@ -135,7 +165,7 @@ nav li {
 }
 
 .scroll-line {
-    border: 1px solid #000000;
+    border-bottom: 1px solid #000000;
     transform: rotate(90deg);
     width: 120px;
     margin: 0 auto;
@@ -277,7 +307,7 @@ nav li {
 /* 2. Reframe */
 
 .reframe-line {
-    border: 1px solid #F3F3F3;
+    border-bottom: 1px solid #F3F3F3;
     transform: rotate(90deg);
     width: 255px;
     display: block;
@@ -425,7 +455,7 @@ br {
 }
 
 .line-design {
-    border: 1px solid #F3F3F3;
+    border-bottom: 1px solid #F3F3F3;
     transform: rotate(90deg);
     display: block;
     margin: 0 auto;
@@ -468,7 +498,7 @@ br {
 }
 
 .build-line-1 {
-    border: 1px solid #F3F3F3;
+    border-bottom: 1px solid #F3F3F3;
     width: 387px;
     position: absolute;
     top: 31%;
@@ -476,7 +506,7 @@ br {
 }
 
 .build-line-2 {
-    border: 1px solid #F3F3F3;
+    border-bottom: 1px solid #F3F3F3;
     width: 387px;
     position: absolute;
     top: 31%;
@@ -546,14 +576,12 @@ br {
 }
 
 footer {
-    /* position: relative; */
-    font-family: Schnyder S Demi;
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
     position: absolute;
     width: 450px;
-    height: 25px;
+    height: 40px;
     left: 495px;
     top: 748px;
     text-align: center;
@@ -561,6 +589,8 @@ footer {
 }
 
 footer a {
-    margin: 0 40px;
+    margin: 10px 40px;
     color: white;
+    font-family: Schnyder S Demi;
+    text-decoration: none;
 }
