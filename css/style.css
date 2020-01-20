@@ -80,17 +80,31 @@ nav {
     text-align: center;
 }
 
-nav span {
+nav a {
     display: block;
     font-size: 36px;
-}
-
-a {
     font-family: Circular Std;
     text-decoration: none;
-    font-size: 16px;
     color: black;
     cursor: none;
+}
+
+nav span {
+    font-size: 16px;
+    display: block;
+}
+
+nav a:hover {
+    text-shadow: -14px 16px 0.5px white, -28px 32px 0 black;
+    color: #D8553B; 
+}
+
+nav a:hover span {
+    display: none;
+}
+
+nav li {
+    list-style: none;
 }
 
 #anim {
@@ -99,17 +113,6 @@ a {
 
 a.green-mode {
     color: white;
-}
-
-nav span:hover {
-    text-shadow: -4px 4px 0.5px white,
-    -8px 8px 0 black;
-    color: #D8553B; 
-}
-
-nav li {
-    list-style: none;
-    transition: .5s;
 }
 
 
@@ -137,13 +140,14 @@ nav li {
     top: 30px;
 }
 
-.home {
+.home-link {
     position: absolute;
     top: 30px;
     left: 0;
     right: 0;
     margin: 0 auto;
     font-family: Berthold;
+    font-size: 16px;
 }
 
 /* status bar */
@@ -247,43 +251,107 @@ nav li {
     z-index: 3;
 }
 
-.button {
-    font-family: Circular Std;
-    font-size: 20px;
-    padding: 15px;
-    transition: ease-in 0.4s;
-    border-radius: 37% 36% 27% 41% / 37% 33% 42% 26%;
-    transform: translate(-50%, -50%);
-    position: relative;
-    display: block;
-    overflow: visible;
-    height: 43px;
-    width: 130px;
+button {
+    text-decoration: none;
+    border: none;
+    background: none;
 }
 
-.button.light {
+.light {
     position: absolute;
     left: 222px;
     top: 673px;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
     color: #000000;
+    padding: 15px;
+    transition: ease-in 0.4s;
+    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+
 }
 
-.button.light.green-mode {
-    color: white;
-}
-
-.button.green {
+.green {
     position: absolute;
     left: 1058px;
     top: 673px;
-    color: #487459;
+    font-family: Circular Std;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+    color: #24562B;
+    padding: 15px;
+    transition: ease-in 0.4s;
+    border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+
 }
 
-.button.green.green-mode {
+.light:hover {
+    background-color: black;
+    color: white;
+    animation: blob 5s linear infinite;
+    transition: ease-out 0.5s;
+}
+
+
+.green:hover {
+    background-color: black;
+    animation: blob 5s linear infinite;
+    transition: ease-out 0.5s;
+    
+}
+
+.light.green-mode {
     color: white;
 }
 
-.button:hover::before {
+.green.green-mode {
+    color: white;
+}
+
+/* button:hover {
+    color: white;
+}
+
+.light { 
+    color: #000000;
+}
+
+.green {
+    color: #487459;
+}
+
+
+
+.blob {
+    background: black;
+    height: 70px;
+    width: 140px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: -1;
+    animation: blob 5s linear infinite;
+}
+
+.blob.one {
+    left: 222px;
+    top: 673px;
+}
+
+.blob.two {
+    left: 1058px;
+    top: 673px;
+}
+
+button:hover .blob::before {
     border-radius: 50%;
     content: '';
     position: absolute;
@@ -298,21 +366,7 @@ nav li {
     z-index: -1;
 }
 
-.button:hover span {
-    border-radius: 50%;
-    content: '';
-    position: absolute;
-    left: -10px;
-    background:black;
-    transform: translate(-50%, -50%);
-    height: 30px;
-    width: 30px;
-    top: 2px;
-    animation: blob-two 4s linear infinite;
-    z-index: -1;
-}
-
-.button:hover::after {
+.blob:hover::after {
     border-radius: 50%;
     content: '';
     position: absolute;
@@ -326,42 +380,12 @@ nav li {
     z-index: -1;
 }
 
-.button:hover span::after {
-    border-radius: 50%;
-    content: '';
-    position: absolute;
-    right: -33px;
-    background:
-    black;
-    transform: translate(-50%, -50%);
-    height: 50px;
-    width: 50px;
-    top: 0px;
-    animation: blob-three 5s linear infinite;
-    z-index: -1;
-}
-
-.button:hover span::before{
-    border-radius: 50%;
-    content: '';
-    position: absolute;
-    right: -99px;
-    background:
-    black;
-    transform: translate(-50%, -50%);
-    height: 50px;
-    width: 50px;
-    top: 21px;
-    animation: blob-two 5s linear infinite;
-    z-index: -1;
-}
-
 .button:hover {
     background-color: black;
     color: white;
     animation: blob 5s linear infinite;
     transition: ease-out 0.5s;
-}
+} */
 
 @keyframes blob-two {
     0%, 100% {
@@ -726,21 +750,20 @@ nav li {
 /* footer */
 
 footer {
-    /* position: relative; */
     font-style: normal;
     font-weight: 500;
     font-size: 21px;
-    position: absolute;
-    width: 450px;
-    height: 25px;
-    left: 495px;
-    top: 748px;
+    width: 100%;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 footer a {
     margin: 0 40px;
     font-family: Schnyder S Demi;
+    text-decoration: none;
+    display: inline-block;
+    color:black;
 }
 
 /* contact */

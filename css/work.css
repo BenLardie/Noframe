@@ -91,32 +91,32 @@ header {
     z-index: 4;
 }
 
-nav {
-    position: relative;
-    width: 100vw;
-    height: 141px;
-    left: 0px;
-    top: 0px;
+nav a {
+    display: block;
+    font-size: 36px;
+    font-family: Circular Std;
+    text-decoration: none;
+    color: white;
+    cursor: none;
     text-align: center;
 }
 
 nav span {
+    font-size: 16px;
     display: block;
-    font-size: 36px;
-    line-height: 46px;
 }
 
-a {
-    font-family: Circular Std;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 20px;
-    color: white;
+nav a:hover {
+    text-shadow: -14px 16px 0.5px white, -28px 32px 0 black;
+    color: #D8553B; 
+}
+
+nav a:hover span {
+    display: none;
 }
 
 nav li {
     list-style: none;
-    transition: .5s;
 }
 
 .work {
@@ -143,13 +143,16 @@ nav li {
     top: 30px;
 }
 
-.home {
+.home-link {
     position: absolute;
+    font-size: 16px;
     top: 30px;
     left: 0;
     right: 0;
     margin: 0 auto;
     font-family: Berthold;
+    display: inline-block;
+    text-align: center;
 }
 
 /* page details */

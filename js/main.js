@@ -30,27 +30,30 @@ document.addEventListener('mousemove', e => {
   cursor.setAttribute('style', `top: ${e.pageY}px; left:${e.pageX}px;`);
 });
 
-const leftPictures = document.querySelectorAll(".case-picture-left");
-
+const leftPictures = document.querySelectorAll('.case-picture-left');
 
 leftPictures.forEach(pic => {
   pic.addEventListener('mousemove', e => {
-    console.log('is this thing on?')
-    pic.style.backgroundPositionX = -e.offsetX + "px";
-    pic.style.backgroundPositionY = -e.offsetY + "px";
-  })
-})
+    console.log('is this thing on?');
+    pic.style.backgroundPositionX = -e.offsetX + 'px';
+    pic.style.backgroundPositionY = -e.offsetY + 'px';
+  });
+});
 
-// green-mode 
+// green-mode
 
 const homePage = document.querySelector('.homepage');
 const navLinks = document.querySelectorAll('a');
 const homeLine = document.querySelector('.home-line');
-const button = document.querySelectorAll('.button');
-const lightMode = document.querySelector('.button.light');
-const greenMode = document.querySelector('.button.green');
+const button = document.querySelectorAll('button');
+const lightMode = document.querySelector('.light');
+const greenMode = document.querySelector('.green');
+
+let green = false;
 
 greenMode.addEventListener('click', () => {
+  console.log(navLinks)
+  green = true;
   homePage.classList.add('green-mode');
   navLinks.forEach(link => {
     link.classList.add('green-mode');
@@ -58,9 +61,10 @@ greenMode.addEventListener('click', () => {
   homeLine.classList.add('green-mode');
   greenMode.classList.add('green-mode');
   lightMode.classList.add('green-mode');
-})
+});
 
 lightMode.addEventListener('click', () => {
+  green = false;
   homePage.classList.remove('green-mode');
   navLinks.forEach(link => {
     link.classList.remove('green-mode');
@@ -68,7 +72,7 @@ lightMode.addEventListener('click', () => {
   homeLine.classList.remove('green-mode');
   lightMode.classList.remove('green-mode');
   greenMode.classList.remove('green-mode');
-})
+});
 
 // footer
 
@@ -85,5 +89,15 @@ window.addEventListener('scroll', () => {
     footer.style.visibility = 'visible';
     footer.style.top = '748px';
     footer.style.bottom = '';
+  }
+  if (window.scrollY < homePage.offsetHeight && green) {
+    navLinks.forEach(link => {
+      link.style.color = 'white';
+    });
+  }
+  if (window.scrollY > homePage.offsetHeight && green) {
+    navLinks.forEach(link => {
+      link.style.color = 'black';
+    });
   }
 });
